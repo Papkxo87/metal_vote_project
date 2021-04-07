@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<!-- Подключаем Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<title>Голосование за лучший музыкальный альбом</title>
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+	</style>
+</head>
+
+<body>
+	<div>
+
+		<!--Создаём меню-->
+		<div class="menuskived">
+			<ul>
+				<li><a href="#">Главная</a></li>
+				<li>
+					<a href="#">Для фанатов</a>
+					<ul class="hidden">
+						<li><a href="http://www.metclub.ru/docs/download/wallpapers/wallpapers.xhtml"
+								target="_blank">METCLUB</a></li>
+						<li><a href="https://www.metallica.com/metclub/" target="_blank">metallica.com</a></li>
+					</uL>
+				</li>
+				<li>
+					<a href="#">Навигация</a>
+					<ul class="hidden">
+						<li><a href="#history">Из истории</a></li>
+						<li><a href="#data">Факты</a></li>
+						<li><a href="#gallery">Галерея</a></li>
+					</ul>
+				</li>
+				<li><a href="#golosovanie">Голосование</a></li>
+				<li><a href="https://www.metallica.com/" target="_blank">Официальный сайт</a></li>
+			</ul>
+		</div>
+
+		<!--Оформляем первый блок-->
+		<div class="start">
+
+			<img class="h1" src="images/metallica logo.png" alt="">
+
+			<p class="met">Metallica (читается как Мета́ллика) — американская метал-группа, образованная в 1981 году, в
+				Лос-Анджелесе. Metallica оказала большое влияние на развитие метала и входит (вместе с такими группами
+				как Slayer,
+				Megadeth и Anthrax) в «большую четвёрку трэш-метала». Альбомы Metallica были проданы в общей
+				сложности в количестве более
+				110 миллионов экземпляров по всему миру, что делает её одним из самых коммерчески успешных
+				металлических
+				коллективов. В 2011 году один из крупнейших журналов о метал-музыке Kerrang! в июньском номере признал
+				Metallica лучшей
+				метал-группой последних 30 лет.
+			</p>
+		</div>
+
+		<!--Оформляем второй блок-->
+		<div class="after">
+			<p id="history">Metallica давно вошла в списки лучших групп всех времен, причем слушают американцев
+				не только фанаты металла. Даже люди, далекие от жанра, узнают их хиты и логотип, что неудивительно,
+				поскольку музыкантам удалось выйти из узкой ниши и стать самым коммерчески успешным коллективом в стиле
+				thrash metal. Альбомы Metallica издаются многомиллионными тиражами, и она давно пополнила Зал славы
+				рок-н-ролла, по сей день оставаясь обожаемой бесчисленным количеством фанатов по всему миру.</p>
+		</div>
+
+		<!--Оформляем третий блок-->
+		<div class="after2">
+			<p id="data"></p>
+			<iframe src="images/metallica_info.png" frameborder="0"></iframe>
+		</div>
+
+		<!--Оформляем четвёртый блок-->
+		<div class="after3">
+			<p id="gallery"></p>
+			<div class="im">
+				<h1 class="p" font-family: fantasy;>Gallery</h1><br>
+				<a href="images/im1.jpg" target='_blank'><img src="images/im1.jpg" alt=""></a>
+				<a href="images/im2.jpg" target='_blank'><img src="images/im2.jpg" alt=""></a>
+				<a href="images/im3.jpg" target='_blank'><img src="images/im3.jpg" alt=""></a>
+				<a href="images/im4.jpg" target='_blank'><img src="images/im4.jpg" alt=""></a>
+				<a href="images/im20.jpg" target='_blank'><img src="images/im20.jpg" alt=""></a><br><br>
+				<a href="images/im6.jpg" target='_blank'><img src="images/im6.jpg" alt=""></a>
+				<a href="images/im7.jpg" target='_blank'><img src="images/im7.jpg" alt=""></a>
+				<a href="images/im8.jpg" target='_blank'><img src="images/im8.jpg" alt=""></a>
+				<a href="images/im9.jpg" target='_blank'><img src="images/im9.jpg" alt=""></a>
+				<a href="images/im10.jpg" target='_blank'><img src="images/im10.jpg" alt=""></a><br><br>
+				<a href="images/im11.jpg" target='_blank'><img src="images/im11.jpg" alt=""></a>
+				<a href="images/im12.jpg" target='_blank'><img src="images/im12.jpg" alt=""></a>
+				<a href="images/im13.jpg" target='_blank'><img src="images/im13.jpg" alt=""></a>
+				<a href="images/im15.jpg" target='_blank'><img src="images/im15.jpg" alt=""></a>
+				<a href="images/im19.jpg" target='_blank'><img src="images/im19.jpg" alt=""></a><br>
+			</div>
+		</div>
+
+		<!--Оформляем пятый блок-->
+		<div class="after4">
+			<p id="golosovanie"></p>
+			<p class="p"><i><b>Какой, на ваш взгляд, альбом группы METALLICA самый лучший</b></i></p>
+			<form action="vote.php" method="get" target="voice">
+				<input type="Hidden" name="id" value="1">
+				<input type="Radio" name="vote" value="1" checked>Master of Puppets<br>
+				<input type="Radio" name="vote" value="2">Ride the Lightning<br>
+				<input type="Radio" name="vote" value="3">Reload<br>
+				<input type="Radio" name="vote" value="4">Death Magnetic<br>
+				<input type="Radio" name="vote" value="5">Load<br>
+				<input type="Radio" name="vote" value="6">Kill'Em All<br>
+				<input type="Radio" name="vote" value="7">Garage Inc.<br>
+				<input type="Radio" name="vote" value="8">St.Anger<br>
+				<input type="Radio" name="vote" value="9">S&M<br>
+				<input type="Radio" name="vote" value="10">Black Album<br>
+				<input type="Radio" name="vote" value="11">And Justice For All<br>
+				<input type="Radio" name="vote" value="12">Hardwired…To Self-Destruct<br>
+				<input type="Radio" name="vote" value="13">Kill'em All (Remastered)<br>
+				<input type="Radio" name="vote" value="14">Creeping Death<br>
+				<input type="Radio" name="vote" value="15">The Metallica Collection<br>
+				<input type="Radio" name="vote" value="16">Ride the Lightning (Deluxe Remaster)<br>
+				<input type="Radio" name="vote" value="17">Live Shit: Binge & Purge<br>
+				<input type="Radio" name="vote" value="18">Hardwired<br>
+				<span class="input-group-text" id="addon-wrapping">Введите ваше имя (Не обязательно)</span>
+				<input type="text" name="name" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+				<input type="Submit" value=" Голосовать" class="btn btn-outline-warning">
+			</form>
+
+			<!--Оформляем ссылки на соцсети-->
+			<div class="sotssety">
+				<a href="#">Metallica в соцсетях</a>
+				<a href="#"><img src="images/strelca.png" width="50" height="50"></a>
+				<a href="https://ru-ru.facebook.com/Metallica" target="_blank"><img class="vid"
+						src="images/FaceBook.png" width="50" height="50"></a>
+				<a href="https://www.instagram.com/metallica/?hl=ru" target="_blank"><img class="vid"
+						src="images/instagram.png" width="50" height="50"></a>
+				<a href="https://twitter.com/metallica" target="_blank"><img class="vid" src="images/Twitter.png"
+						width="50" height="50"></a>
+				<a href="https://vk.com/rockmetallica" target="_blank"><img class="vid" src="images/vkontakte.png"
+						width="50" height="50"></a>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

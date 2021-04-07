@@ -1,0 +1,26 @@
+/*Оформляем страницу приветствия*/
+body{
+    background: url("../images/HelloMetall.jpg")no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+h1{
+    color: white;
+    font-family: fantasy;
+    text-align:  center;
+    opacity: 0.5;
+    background: linear-gradient(red, rgb(0, 0, 7), none);
+    font-size: 40px;
+}
+
+a{
+    position: fixed;
+    left: 45%; 
+    bottom: 5%;
+}
+
+a:hover{
+    transition: 1s;
+    transform: scale(1.5);
+}
